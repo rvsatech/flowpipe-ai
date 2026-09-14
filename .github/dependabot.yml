@@ -1,0 +1,37 @@
+version: 2
+updates:
+  # API NestJS
+  - package-ecosystem: "npm"
+    directory: "/apps/api-nestjs"
+    schedule:
+      interval: "weekly"
+    groups:
+      npm-dependencies:
+        patterns:
+          - "*"
+
+  # Workers de IA (Python)
+  - package-ecosystem: "pip"
+    directory: "/apps/worker-python"
+    schedule:
+      interval: "weekly"
+    groups:
+      pip-dependencies:
+        patterns:
+          - "*"
+
+  # Orchestrator + workers (Golang)
+  - package-ecosystem: "gomod"
+    directory: "/apps/orchestrator-go"
+    schedule:
+      interval: "weekly"
+    groups:
+      gomod-dependencies:
+        patterns:
+          - "*"
+
+  # Workflows do próprio GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
