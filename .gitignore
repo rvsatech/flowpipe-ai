@@ -1,0 +1,41 @@
+# Ambiente e segredos
+.env
+.env.local
+*.pem
+*.key
+
+# Node / NestJS
+node_modules/
+dist/
+npm-debug.log*
+.pnpm-store/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+
+# Go
+bin/
+*.exe
+*.test
+vendor/
+
+# Docker
+*.env.docker
+
+# Observabilidade (dados locais)
+infra/observability/data/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Exports locais (não versionados)
+*.pdf
+*_files/

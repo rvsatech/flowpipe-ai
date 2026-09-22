@@ -1,0 +1,7 @@
+# Simula revisão por área mesmo em projeto solo — ver docs/development-plan.md § 0.8
+
+/apps/api-nestjs/       @rvsatech
+/apps/worker-python/    @rvsatech
+/apps/orchestrator-go/  @rvsatech
+/infra/                 @rvsatech
+/docs/                  @rvsatech
